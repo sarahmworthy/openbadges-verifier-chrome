@@ -1,0 +1,13 @@
+{
+	"@@extension_name":
+	{
+		"message": "Open Badges Verifier",
+		"description": "Name of the extension"
+	},
+
+	"@@extension_description":
+	{
+		"message": "An extension to verify Open Badges Infrastructure compliant digital badges.",
+		"description": "Description of the extension."
+	}
+}

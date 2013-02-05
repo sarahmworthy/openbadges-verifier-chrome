@@ -20,14 +20,14 @@
 
 	"background":
 	{
-		"scripts": [ "js/jquery-1.9.0.min.js", "js/async.js", "js/zlib.js", "js/png.js", "js/sha256.js", "js/verifier.js", "js/displayer.js", "js/background.js" ]
+		"scripts": [ "js/jquery-1.9.0.min.js", "js/async.js", "js/zlib.js", "js/png.js", "js/md5.js", "js/sha256.js", "js/sha512.js", "js/verifier.js", "js/displayer.js", "js/background.js" ]
 	},
 
 	"content_scripts":
 	[{
 		"run_at": "document_end",
 		"css": [ "css/style.css" ],
-		"js": [ "js/jquery-1.9.0.min.js", "js/async.js", "js/zlib.js", "js/png.js", "js/sha256.js", "js/verifier.js", "js/displayer.js", "js/content.js" ],
+		"js": [ "js/jquery-1.9.0.min.js", "js/async.js", "js/zlib.js", "js/png.js", "js/md5.js", "js/sha256.js", "js/sha512.js", "js/verifier.js", "js/displayer.js", "js/content.js" ],
 		"matches": [ "http://*/*", "https://*/*" ]
 	}],
 

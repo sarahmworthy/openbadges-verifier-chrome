@@ -1,0 +1,17 @@
+{
+	"recipient": "1337$cfa2399ef9630B35e898C9149ec093e268d772f3b21A7b5128E2353f62ebd4c8",
+	"salt": "udGcOlwIuBgoGoSsHKcb6JzgIlRSxIy51DQIeNPnj53o2WWX2WY0mR3Clv2cMS9y",
+	"badge": {
+		"version": "0.5.0",
+		"name": "MozFest Fellow",
+		"description": "Participating in, sharing and performing superior peer-related activities for individuals and the larger community at MozFest",
+		"image": "https://badges.webmaker.org/badge/image/mozfestivator.png",
+		"criteria": "https://badges.webmaker.org/badge/criteria/mozfestivator",
+		"issuer": {
+			"name": "Mozilla",
+			"contact": "brian@mozillafoundation.org",
+			"org": "Webmaker",
+			"origin": "https://badges.webmaker.org"
+		}
+	}
+}

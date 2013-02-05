@@ -1,0 +1,16 @@
+{
+	"recipient": "emily@mozillafoundation.org",
+	"badge": {
+		"version": "0.5.0",
+		"name": "MozFest Fellow",
+		"description": "Participating in, sharing and performing superior peer-related activities for individuals and the larger community at MozFest",
+		"image": "https://badges.webmaker.org/badge/image/mozfestivator.png",
+		"criteria": "https://badges.webmaker.org/badge/criteria/mozfestivator",
+		"issuer": {
+			"name": "Mozilla",
+			"contact": "brian@mozillafoundation.org",
+			"org": "Webmaker",
+			"origin": "https://badges.webmaker.org"
+		}
+	}
+}

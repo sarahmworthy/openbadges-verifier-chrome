@@ -1,0 +1,17 @@
+{
+	"recipient": "sha256$afd43b72a869c10e6372d0a302b6fc426f84280a6c266fc2575b98ae0b27fb65",
+	"salt": "1RNkNFcuqdntk6iaBKZv6l1mCmFpByGLIXa84V5wPAlxYZ5CXhDBbmmMzFTzHe3X",
+	"badge": {
+		"version": "0.5.0",
+		"name": "MozFest Reveler",
+		"description": "Attending & participating in MozFest 2012",
+		"image": "https://badges.webmaker.org/badge/image/mozfesticipant.png",
+		"criteria": "https://badges.webmaker.org/badge/criteria/mozfesticipant",
+		"issuer": {
+			"name": "Mozilla",
+			"contact": "brian@mozillafoundation.org",
+			"org": "Webmaker",
+			"origin": "https://badges.webmaker.org"
+		}
+	}
+}

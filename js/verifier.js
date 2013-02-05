@@ -9,6 +9,7 @@ var OpenBadges = (function (openBadges) {
 		}
 	}
 
+	var REGEXP_URL = /\b((?:[a-z][\w-]+:(?:\/{1,3}|[a-z0-9%])|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}\/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'".,<>?«»“”‘’]))/i;
 	var REGEXP_EMAIL = /^(([^<>()\[\]\\.,;:\s@\"]+(\.[^<>()\[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 	var HASH = {
@@ -110,19 +111,21 @@ var OpenBadges = (function (openBadges) {
 		 * @param {Function} callback when verification does not succeed (errorString)
 		 */
 		verifyAssertion: function (email, assertion, successCallback, errorCallback) {
-			if (email === assertion.recipient) {
-				callback(successCallback, assertion);
-			} else {
 				// some badges do not have salt
 				assertion.salt = assertion.salt || '';
 
-				var array = assertion.recipient.split('$');
-				if (HASH[array[0]](email + assertion.salt).toString() === array[1]) {
+				if (email === assertion.recipient) {
 					callback(successCallback, assertion);
-				} else {
-					callback(errorCallback, 'Badge does not belong to ' + email + '.');
+					return;
 				}
-			}
+
+				var array = String(assertion.recipient).split('$');
+				if (array.length === 2 && HASH[array[0]](email + assertion.salt).toString() === array[1]) {
+					callback(successCallback, assertion);
+					return;
+				}
+
+				callback(errorCallback, 'Badge does not belong to ' + email + '.');
 		},
 
 		/**

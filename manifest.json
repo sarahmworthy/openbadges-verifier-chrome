@@ -34,7 +34,9 @@
 	"web_accessible_resources":
 	[
 		"img/tick.png",
-	    "img/cross.png"
+	    "img/cross.png",
+	    "img/icon128.png",
+	    "lightbox.html"
 	],
 
 	"permissions":
